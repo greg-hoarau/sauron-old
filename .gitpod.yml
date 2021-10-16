@@ -1,0 +1,14 @@
+# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
+tasks:
+  - init: yarn install
+    command: yarn redwood dev
+
+# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
+ports:
+  - port: 8910
+    onOpen: open-preview
+  - port: 8911
+    onOpen: open-preview
+
+image:
+  file: .gitpod.Dockerfile
